@@ -1,0 +1,1 @@
+{FreeVerb.ar(LFPulse.ar(LFNoise0.kr(4).exprange(200,800).round(75), 0, 0.25, 0.75), 0.75)+(WhiteNoise.ar(SinOsc.kr(0.05))*0.5)}.play;
