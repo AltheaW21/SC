@@ -48,7 +48,7 @@ This block is all about triggering the cricket synth. According to this code, cr
 `~hr.wait;
 ~i=~i+1;
 )}
-)}.play;``
+)}.play;`
 
 This just wraps up Tara's code, and plays it. This is the counter that determines which hour it is. I assume there is a seperate function outside of this excerpt that determines how long an hour lasts, but this code waits until the hour is changed to up the ~i hour counter.
 
