@@ -56,8 +56,6 @@ d = Pbind(
 d.stop;
 
 //First modulator synth
-//~modbusA1=Bus.audio(s, 1);
-
 SynthDef.new(\modA, {
 	arg rate = 0.03, atk=0.2, dec, out=~modBusA;
 	var lfo1, ampenv;
@@ -65,6 +63,7 @@ SynthDef.new(\modA, {
 	Out.kr(out, lfo1);
 }).add;
 
+//Second modulator synth
 SynthDef.new(\modB, {
 	arg rate = 0.03, amp=5, out=~modBusB;
 	var lfo1;
